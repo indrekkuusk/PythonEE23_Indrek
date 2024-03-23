@@ -1,0 +1,4 @@
+id,name,age,city,potato_count
+2,Indrek Kuusk,50,V6ru,4
+3,Indreeek,50,Vöru,4
+4,Kuusk1,49,Väru,2
