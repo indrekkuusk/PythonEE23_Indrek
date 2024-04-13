@@ -21,7 +21,7 @@ eima.blaz@gmail.com_'''
 
 
 patternText = re.compile(r'ac') # To find exact text
-patternAnyText = re.compile(r'.') # To find eny text
+patternAnyText = re.compile(r'') # To find eny text
 patternDigits = re.compile(r'\d')  # Find all digits
 patternDigits = re.compile(r'\D')  # Find all nor digits
 patternCharacters = re.compile(r'\w') # Characters and _
