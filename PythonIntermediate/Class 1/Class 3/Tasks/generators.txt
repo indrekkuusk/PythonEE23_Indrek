@@ -1,0 +1,5 @@
+   1. Generate Even Numbers: Write a generator function that yields even numbers up to a given limit.
+   2. Reading Large Files Line by Line: Write a generator function that reads a large file line by line and yields each line.
+   3.  Infinite Range Generator: Create a generator function that generates an infinite sequence of numbers starting from a specified start value and incrementing by a specified step.
+   4.  Random Number Generator: Write a generator function that generates a sequence of random numbers within a specified range.
+   5.  Countdown: Create a generator function that counts down from a specified start value to 0.

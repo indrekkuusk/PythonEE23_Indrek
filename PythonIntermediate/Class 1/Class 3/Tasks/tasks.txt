@@ -1,0 +1,22 @@
+Task 1: Extract all numbers from the given text "test43543lfdsfdsfl534543fdgl432fr" using regular expressions.
+
+i.e., for the "test43543lfdsfdsfl534543fdgl432fr" it will be:
+43543
+534543
+432
+
+Task 1.1: Take the same text as in the exercise above and write a program using regular expressions that will remove all numbers from the text.
+
+Task 2: Write a program that uses regular expressions to check whether the given telephone number is correct. Use your country phone number format for the task.
+
+Match a Specific Word: Write a regex pattern to match the word "hello" in a given string.
+text = "Say hello to the world"
+
+Write a regex pattern to match any digit in a given string.
+text = "I have 3 apples and 5 oranges"
+
+Write a regex pattern to match email addresses in a given text.
+text = "Contact us at email@example.com or support@example.org"
+
+Write a regex pattern to match words starting with the letter "a" or "A" in a given string.
+text = "Apples are awesome and so are bananas"
