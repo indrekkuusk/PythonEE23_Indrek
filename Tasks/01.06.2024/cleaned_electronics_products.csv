@@ -1,0 +1,53 @@
+id,name,category,price,currency,stock,description,manufacturer,warranty,extra_field
+2,Product 2,Wearables,808.81,USD,127,Description of product 2,BrightLife,1 year,Extra value 2
+3,Product 3,Cleaning,467.24,USD,122,Description of product 3,TabTech,2 years,Extra value 3
+8,Product 8,Tablets,489.57,USD,161,Description of product 8,BrightLife,1 year,Extra value 8
+11,Product 11,Cleaning,951.59,USD,157,Description of product 11,,2 years,Extra value 11
+18,Product 18,Smartphones,290.31,USD,193,Description of product 18,VirtuaWorld,1 year,Extra value 18
+24,Product 24,Tablets,122.6,USD,190,Description of product 24,CleanBot,1 year,Extra value 24
+26,Product 26,Smartphones,404.85,USD,75,Description of product 26,CompWorld,2 years,Extra value 26
+27,Product 27,Appliances,90.0,USD,14,Description of product 27,DisplayMakers,1 year,Extra value 27
+33,Product 33,Laptops,592.77,USD,27,Description of product 33,,1 year,Extra value 33
+35,Product 35,Cleaning,923.65,USD,1,,KitchenEase,2 years,Extra value 35
+51,Product 51,Accessories,993.11,USD,178,Description of product 51,TechCorp,1 year,Extra value 51
+52,Product 52,Cameras,354.22,USD,64,Description of product 52,CleanBot,1 year,Extra value 52
+53,Product 53,Smartphones,547.19,USD,117,Description of product 53,WearTech,1 year,Extra value 53
+56,Product 56,Accessories,908.59,USD,149,,GameOn,1 year,Extra value 56
+73,Product 73,Monitors,226.87,USD,167,Description of product 73,BrightLife,2 years,Extra value 73
+76,Product 76,Gaming,976.32,USD,117,Description of product 76,KitchenEase,2 years,Extra value 76
+100,Product 100,Security,840.91,USD,167,Description of product 100,KitchenEase,1 year,Extra value 100
+108,Product 108,Smartphones,103.51,USD,194,Description of product 108,SoundMaster,2 years,Extra value 108
+111,Product 111,Wearables,98.67,USD,114,Description of product 111,CompWorld,2 years,Extra value 111
+113,Product 113,Virtual Reality,267.09,USD,34,Description of product 113,SecureHome,2 years,Extra value 113
+119,Product 119,Virtual Reality,54.11,USD,152,,KitchenEase,2 years,Extra value 119
+124,Product 124,Accessories,955.56,USD,89,Description of product 124,WearTech,1 year,Extra value 124
+126,Product 126,Audio,266.69,USD,177,,WearTech,1 year,Extra value 126
+129,Product 129,Wearables,99.76,USD,46,Description of product 129,WearTech,1 year,Extra value 129
+156,Product 156,Wearables,793.57,USD,74,Description of product 156,DisplayMakers,2 years,Extra value 156
+165,Product 165,Audio,194.47,USD,35,Description of product 165,,1 year,Extra value 165
+171,Product 171,Cleaning,728.68,USD,136,Description of product 171,ReadEasy,1 year,Extra value 171
+174,Product 174,Accessories,262.69,USD,117,Description of product 174,CamTech,2 years,Extra value 174
+176,Product 176,Smart Home,571.94,USD,12,Description of product 176,,1 year,Extra value 176
+179,Product 179,Gaming,737.89,USD,65,Description of product 179,VirtuaWorld,1 year,Extra value 179
+182,Product 182,Laptops,832.44,USD,140,,ViewPlus,1 year,Extra value 182
+192,Product 192,Cameras,260.87,USD,130,Description of product 192,CleanBot,2 years,Extra value 192
+200,Product 200,Tablets,240.26,USD,10,Description of product 200,ViewPlus,1 year,Extra value 200
+203,Product 203,TVs,389.52,USD,47,,TabTech,2 years,Extra value 203
+206,Product 206,Virtual Reality,243.46,USD,80,Description of product 206,SoundMaster,1 year,Extra value 206
+217,Product 217,Smartphones,253.42,USD,199,,KitchenEase,2 years,Extra value 217
+218,Product 218,Smartphones,251.01,USD,125,Description of product 218,CleanBot,2 years,Extra value 218
+220,Product 220,Security,925.53,USD,128,Description of product 220,,2 years,Extra value 220
+225,Product 225,Security,180.61,USD,94,Description of product 225,ViewPlus,2 years,Extra value 225
+230,Product 230,Accessories,455.94,USD,95,Description of product 230,ViewPlus,2 years,Extra value 230
+237,Product 237,Smartphones,63.04,USD,89,Description of product 237,TechCorp,1 year,Extra value 237
+244,Product 244,Audio,792.33,USD,0,Description of product 244,TabTech,2 years,Extra value 244
+257,Product 257,Gaming,472.98,USD,147,Description of product 257,DisplayMakers,2 years,Extra value 257
+258,Product 258,Monitors,455.3,USD,183,Description of product 258,CamTech,1 year,Extra value 258
+259,Product 259,Security,673.67,USD,186,,SoundMaster,2 years,Extra value 259
+260,Product 260,Gaming,724.83,USD,42,Description of product 260,CamTech,2 years,Extra value 260
+270,Product 270,Smartphones,169.93,USD,132,Description of product 270,GameOn,1 year,Extra value 270
+271,Product 271,Laptops,88.7,USD,191,Description of product 271,BrightLife,2 years,Extra value 271
+276,Product 276,TVs,443.23,USD,82,Description of product 276,BrightLife,2 years,Extra value 276
+279,Product 279,TVs,75.0,USD,164,Description of product 279,VirtuaWorld,2 years,Extra value 279
+281,Product 281,Audio,950.17,USD,5,Description of product 281,BrightLife,1 year,Extra value 281
+298,Product 298,Laptops,899.52,USD,138,Description of product 298,DisplayMakers,1 year,Extra value 298

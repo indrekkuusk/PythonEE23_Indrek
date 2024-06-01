@@ -1,0 +1,81 @@
+{
+    "discounts.json": {
+        "discount_settings.discount-general": "Discount General Settings",
+        "discount-help": "Discount Help",
+        "discount_search.discount-advanced": "Discount Advanced Search",
+        "discount-search": "Discount Search",
+        "discount-new": "Discount New",
+        "discount-calendar": "Discount Calendar"
+    },
+    "home.json": {
+        "home_settings.home-general": "Home General Settings",
+        "home-help": "Home Help",
+        "home-logout": "Home Logout",
+        "home_search.home-advanced": "Home Advanced Search",
+        "home-search": "Home Search",
+        "home-new": "Home New"
+    },
+    "invoice-settings.json": {
+        "invoice_config.invoice-general": "Invoice Config",
+        "invoice-format": "Invoice Format",
+        "custom_messages.invoice-custom": "Custom Messages",
+        "invoice-design": "Invoice Design",
+        "invoice-logo": "Invoice Logo"
+    },
+    "invoices.json": {
+        "invoice_settings.invoice-general": "Invoice General Settings",
+        "invoice-help": "Invoice Help",
+        "invoice_search.invoice-advanced": "Invoice Advanced Search",
+        "invoice-search": "Invoice Search",
+        "invoice-new": "Invoice New",
+        "invoice-calendar": "Invoice Calendar"
+    },
+    "navigation.json": {
+        "settings.general": "General Settings",
+        "logout": "Logout",
+        "search.advanced": "Advanced Search",
+        "search.settings": "Settings",
+        "new": "New"
+    },
+    "products-settings.json": {
+        "product_config.product-general": "Product Config",
+        "product-format": "Product Format",
+        "custom_fields.custom-field": "Custom Field",
+        "product-help": "Product Help",
+        "product_search.product-advanced": "Product Advanced Search",
+        "product-search": "Product Search",
+        "product-new": "Product New"
+    },
+    "products.json": {
+        "product_settings.product-general": "Product General Settings",
+        "product-help": "Product Help",
+        "product_search.product-advanced": "Product Advanced Search",
+        "product-search": "Product Search",
+        "product-new": "Product New",
+        "product-calendar": "Product Calendar"
+    },
+    "reports.json": {
+        "report_settings.report-general": "Report General Settings",
+        "report-help": "Report Help",
+        "report_search.report-advanced": "Report Advanced Search",
+        "report-search": "Report Search",
+        "report-new": "Report New",
+        "report-calendar": "Report Calendar"
+    },
+    "sub-navigation.json": {
+        "sub_settings.sub-general": "Sub General Settings",
+        "sub-logout": "Sub Logout",
+        "sub_search.sub-advanced": "Sub Advanced Search",
+        "sub-settings": "Sub Settings",
+        "sub-new": "Sub New"
+    },
+    "website-settings.json": {
+        "website_config.website-general": "Website General Settings",
+        "website-help": "Website Help",
+        "website_search.website-advanced": "Website Advanced Search",
+        "website-search": "Website Search",
+        "website-new": "Website New",
+        "seo_settings.seo-config": "SEO Config",
+        "website-calendar": "Website Calendar"
+    }
+}
