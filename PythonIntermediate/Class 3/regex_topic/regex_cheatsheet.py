@@ -1,15 +1,15 @@
-# Base for Cheatsheet
 import re
 
+# Base for Cheatsheet
 play_string = '''abcdefghijklmnopqurtuvwxyz
 abcDefghijklmNopqurtuvwxyZ
 1234567890
 Ha HaHa
 MetaCharacters (Need to be escaped):
-. ^ $ * + ? { } [ ]  | ( )
+. ^ $ * + ? { } [ ] \\ | ( )
 lietuva.com
 ac
-+370
++37060482010
 }37060482010
 +370.604.82.010
 +370-604-82-010
@@ -19,38 +19,58 @@ ac
 111.999.6699
 eima.blaz@gmail.com_'''
 
+pattern_text = re.compile(r'abcdefghijklmno')  # Exact text
+patternAnyText = re.compile(r'.')  # Any text
+patternDigits = re.compile(r'\d')  # All digits
+patternNotDigits = re.compile(r'\D')  # All not digits
+patterCharacters = re.compile(r'\w')  # Characters and _
+patterNotCharacters = re.compile(r'\W')  # Not characters and not _
+patternWhiteSpace = re.compile(r'\s')  # White space and new line
+patternNotWhiteSpace = re.compile(r'\S')  # Not White space and new line
 
-patternText = re.compile(r'ac') # To find exact text
-patternAnyText = re.compile(r'') # To find eny text
-patternDigits = re.compile(r'\d')  # Find all digits
-patternDigits = re.compile(r'\D')  # Find all nor digits
-patternCharacters = re.compile(r'\w') # Characters and _
-patternNotCharacters = re.compile(r'\w') # Not Characters and not _
-patternWhiteSpace = re.compile(r'\s') # White space and new line
+patternWordBoundary = re.compile(r'\bHa')  # Occurrences of Ha even if it is star of another work
+patternNotWordBoundary = re.compile(r'\BHa')  # Individual occurrences of Ha
+patternStartString = re.compile(r'^abc')  # Start with string
+patterEndWithString = re.compile(r'.com_')  # Ends with String
 
-patternWordBoundry = re.compile(r'\bHa') # Occurences of Ha even if it is star of another work
-patternNotWordBoundry = re.compile(r'\BHa') # Individual occurences of Ha
-patternStartString = re.compile(r'^abc') # Starts with a string
-patternEndWithString = re.compile(r' .com_') # Ends with a string
+patternListOfOptions = re.compile(r'[+-]37060482010')  # List of options
+patternNotListOfOption = re.compile(r'[^+-]37060482010')  # Not list of options
+patternGrouping = re.compile(r'\+(\d\d\d).(\d\d\d).(\d\d.\d\d)')  # Grouping
+patternGroupingWithOr = re.compile(r'\+(\d\d\d|\w\w\w).(\d\d\d).(\d\d.\d\d)')  # Grouping with OR
 
-patterListOfOptions = re.compile(r'[+-]37060482010') # List of options
-patterNotListOfOptions = re.compile(r'[^+-]37060482010') # List of options
-patternGrouping = re.compile(r'\+(\d\d\d).(\d\d\d).(\d\d.\d\d)') # Grouping
-patternGroupingWithOr = re.compile(r'\+(\d\d\d)|\w\w\w.(\d\d\d).(\d\d.\d\d)') # Grouping
+patternZeroOrMore = re.compile(r'\+370*')  # Zero or more
+patternOneOrMore = re.compile(r'\+370+')  # One or more
+patternOptionalCharacter = re.compile(r'ab?c')  # Optional Character
+patternExactNumber = re.compile(r'\+(\d{3}).(\d{3}).(\d{2}.\d{2})')
+patternRangeOfNumbers = re.compile(r'(\d{3}).(\d{3}).(\d{2,4})')
 
-patternZeroOrMore = re.compile(r'\+370*') #
-patternOneOrMore = re.compile(r'\+370+') #
-patternOptionCharacter = re.compile(r'ab?c') # Optional character
-patternExactNumber = re.compile(r'\+(\d{3}).(\d{3}).(\d{2,4})')
+result = re.findall(patternOneOrMore, play_string)
+print(result)
 
-# result = re.findall(patternExactNumber, play_string)
-# print(result)
-resutSearch = patternText.search(play_string)
-print(resutSearch.group(0))
+#  Find first occurrence of the pattern in the text
+resultSearch = patternText.search(play_string)
+# print(resultSearch.group(0))
 
-# Match the start of the text
+#  Match the start of the text
 resultMatch = patternText.match(play_string)
-print(resutSearch)
+# print(resultMatch)
 
-# Find all occurances
+#  Find all occurrences
 resultFindAll = patternText.findall(play_string)
+# print(resultFindAll)
+
+# Same as find all but returns an iterator
+resultFindAllIter = patternText.finditer(play_string)
+# print(resultFindAllIter)
+
+# Split functionality
+resultSplit = patternWhiteSpace.split(play_string)
+# print(resultSplit)
+
+# Substitute with another
+resultSub = patternWhiteSpace.sub('Potato', play_string)
+# print(resultSub)
+
+# Substitute with another but shows how many substitutes done
+resultSubN = patternWhiteSpace.subn('Potato', play_string)
+# print(resultSubN)
