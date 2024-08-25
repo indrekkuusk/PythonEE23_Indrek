@@ -56,7 +56,7 @@ ROOT_URLCONF = 'moviedb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'), os.path.join(BASE_DIR,'moviesearch', 'templates')],  # Modify this line
+        'DIRS': [os.path.join(BASE_DIR,  'templates'), os.path.join(BASE_DIR,'moviesearch', 'templates')],  # Modify this line
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

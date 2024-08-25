@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ movie.title }}</title>
+</head>
+<body>
+    <h1>{{ movie.title }} ({{ movie.release_date|slice:":4" }})</h1>
+    <img src="https://image.tmdb.org/t/p/w300/{{ movie.poster_path }}" alt="{{ movie.title }}">
+    <p><strong>Overview:</strong> {{ movie.overview }}</p>
+
+    <p><strong>Genres:</strong>
+        {% for genre in movie.genres %}
+            {{ genre.name }}{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+
+    <p><strong>Runtime:</strong> {{ movie.runtime }} minutes</p>
+    <p><strong>Rating:</strong> {{ movie.vote_average }} / 10</p>
+
+    <h3>Cast:</h3>
+    <ul>
+        {% for cast in movie.credits.cast|slice:":10" %}
+            <li>{{ cast.name }} as {{ cast.character }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'movie_search' %}">Back to Search</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ movie.title }}</title>
+</head>
+<body>
+    <h1>{{ movie.title }} ({{ movie.release_date|slice:":4" }})</h1>
+    <img src="https://image.tmdb.org/t/p/w300/{{ movie.poster_path }}" alt="{{ movie.title }}">
+    <p><strong>Overview:</strong> {{ movie.overview }}</p>
+
+    <p><strong>Genres:</strong>
+        {% for genre in movie.genres %}
+            {{ genre.name }}{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+
+    <h3>Cast:</h3>
+    <ul>
+        {% for cast in movie.credits.cast|slice:":10" %}
+            <li>{{ cast.name }} as {{ cast.character }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Add the bookmark button -->
+    <form action="{% url 'save_movie' movie.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Bookmark this Movie</button>
+    </form>
+
+    <a href="{% url 'movie_search' %}">Back to Search</a>
+
+</body>
+</html>

@@ -25,7 +25,7 @@ def movie_search(request):
                 data = response.json()
                 movies = data['results']  # Get list of movies
 
-    return render(request, 'moviesearch/search.html', {'form': form, 'movies': movies})
+    return render(request, 'search.html', {'form': form, 'movies': movies})
 
 
 def movie_detail(request, movie_id):
@@ -38,5 +38,5 @@ def movie_detail(request, movie_id):
     if response.status_code == 200:
         movie = response.json()  # Get movie details from response
 
-    return render(request, 'moviesearch/detail.html', {'movie': movie})
+    return render(request, 'detail.html', {'movie': movie})
 
