@@ -1,0 +1,151 @@
+name,products,loyalty_card
+James Davis,Soda; Broccoli; Tea; Chocolate; Cheese; Rice; Strawberry; Salt; Water; Shampoo,True
+Laura Williams,Sugar; Milk; Toothpaste; Soap; Olive Oil; Orange,False
+Sara Davis,Soda; Chicken; Pork; Olive Oil; Tea; Strawberry,False
+Katie Brown,Bread; Shrimp; Toothpaste; Chicken; Cookies; Fish; Pork; Strawberry; Yogurt,False
+James Miller,Pasta; Cereal; Oatmeal,True
+James Miller,Milk; Yogurt; Ice Cream; Bread; Shrimp; Blueberry,True
+James Taylor,Butter; Banana; Lettuce; Cereal,True
+Chris Wilson,Carrot; Oatmeal; Coffee; Yogurt; Chips; Milk; Shrimp; Bread,True
+Robert Moore,Oatmeal; Blueberry; Lotion; Banana; Pasta,True
+Alex Johnson,Bread; Blueberry; Eggs; Salt; Oatmeal; Water; Strawberry; Banana,True
+Laura Williams,Fish; Broccoli; Deodorant; Beef; Blueberry; Candy; Salt,True
+John Taylor,Oatmeal; Shrimp,False
+Jane Moore,Shampoo; Olive Oil; Shrimp; Soap; Coffee; Butter,False
+James Williams,Rice; Flour; Soap; Shampoo; Ice Cream; Apple; Juice,False
+David Wilson,Banana,True
+David Taylor,Coffee; Tomato; Shampoo; Blueberry,True
+James Davis,Cookies; Ice Cream; Tea,True
+Laura Davis,Tomato; Orange; Oatmeal,False
+Chris Moore,Sugar; Flour,False
+Sara Wilson,Lettuce; Strawberry; Cookies; Carrot; Sugar; Oatmeal; Eggs; Salt; Soap; Flour,True
+Chris Miller,Cereal; Soda; Soap; Salt; Beef; Butter; Olive Oil; Bread,False
+Sara Moore,Sugar; Cookies; Olive Oil; Ice Cream; Tomato; Cheese,False
+Alex Williams,Cereal; Broccoli; Lotion,False
+Robert Jones,Carrot; Lotion; Deodorant; Cookies; Spinach; Ice Cream; Pork,True
+Chris Brown,Strawberry; Juice; Apple; Sugar,True
+Katie Jones,Strawberry; Rice; Olive Oil; Apple; Banana; Chocolate; Broccoli; Pepper; Coffee,False
+Sara Smith,Rice; Shampoo; Eggs,False
+Katie Jones,Eggs; Olive Oil; Pasta; Butter; Coffee; Pepper,False
+Katie Taylor,Chicken; Bread; Beef; Eggs; Cereal; Ice Cream; Juice; Candy,False
+Sara Moore,Coffee; Tea; Shrimp; Broccoli; Tomato; Soap; Pepper; Strawberry; Fish,True
+Alex Davis,Ice Cream; Shampoo; Beef; Oatmeal; Cereal; Spinach; Salt; Tea; Juice; Toothpaste,False
+David Miller,Lotion; Lettuce,False
+Sara Taylor,Flour; Apple; Blueberry,True
+Sara Taylor,Ice Cream; Toothpaste,True
+David Williams,Apple; Toothpaste; Shrimp; Tea,True
+Chris Smith,Chocolate; Bread,False
+Jane Brown,Rice; Broccoli; Pork; Shrimp; Coffee; Shampoo,False
+David Jones,Blueberry; Pasta; Soap; Flour,False
+Chris Moore,Deodorant; Sugar; Tomato; Chocolate; Soap; Broccoli; Shrimp; Candy; Orange; Ice Cream,True
+Laura Miller,Soap; Soda; Sugar; Bread,False
+Jane Davis,Deodorant; Pepper; Olive Oil; Strawberry; Yogurt; Beef,False
+Katie Moore,Beef; Toothpaste; Cereal; Cheese; Milk; Carrot; Chips; Deodorant; Chocolate; Soap,True
+Katie Jones,Oatmeal; Cookies; Ice Cream; Coffee; Juice; Rice,False
+Sara Brown,Flour; Carrot; Cheese; Tomato; Eggs,False
+Chris Davis,Deodorant; Pepper; Oatmeal; Coffee; Flour; Fish; Candy; Broccoli,False
+Laura Brown,Lotion; Soda; Shampoo; Pork,True
+Katie Wilson,Eggs; Cereal; Spinach; Rice; Lettuce; Orange; Strawberry; Banana,True
+John Williams,Sugar; Tomato; Pasta; Shrimp; Ice Cream; Orange; Toothpaste; Cereal,False
+Chris Moore,Broccoli,True
+Sara Wilson,Apple; Milk; Tea; Flour; Chocolate; Soda; Spinach; Olive Oil; Toothpaste; Rice,False
+David Moore,Yogurt; Shrimp; Pasta; Oatmeal; Ice Cream; Apple; Blueberry; Juice; Lettuce; Chicken,False
+Laura Wilson,Blueberry; Chips; Shrimp; Eggs; Spinach; Strawberry; Soap,True
+David Taylor,Salt; Banana; Beef; Rice; Shrimp; Apple,False
+Sara Miller,Chips; Pork; Soap; Coffee; Butter,True
+Jane Brown,Candy; Beef; Ice Cream; Cheese; Pepper; Sugar,True
+Katie Davis,Cereal; Strawberry; Soda; Tea; Yogurt; Shampoo; Oatmeal,False
+Chris Wilson,Cookies; Strawberry; Cheese; Bread; Butter; Sugar,True
+John Taylor,Coffee; Pasta,False
+Chris Miller,Pepper; Fish; Cheese; Soda; Butter; Tea; Orange; Beef,False
+Laura Davis,Sugar; Milk; Candy; Juice; Soda; Cereal; Chicken; Water; Eggs,False
+Alex Wilson,Toothpaste; Broccoli; Coffee,False
+Robert Smith,Candy; Blueberry; Shrimp; Pork; Lettuce; Sugar; Pepper,False
+Laura Smith,Lettuce; Shampoo; Spinach; Rice; Blueberry,True
+Alex Williams,Tomato; Shampoo; Eggs,True
+David Williams,Banana,False
+Laura Wilson,Lettuce; Beef; Chocolate; Milk; Soap; Chips; Tomato; Soda,True
+Jane Moore,Chocolate; Orange; Shampoo; Salt,False
+Alex Smith,Lettuce; Deodorant,False
+Katie Brown,Pasta,False
+John Davis,Blueberry; Oatmeal; Sugar; Flour; Lettuce; Toothpaste; Cereal; Butter,False
+Sara Jones,Eggs; Shrimp; Flour; Banana; Sugar,True
+James Davis,Chicken; Rice; Tea; Soap; Cereal; Fish,False
+Chris Taylor,Flour; Water; Beef; Carrot; Milk; Tea; Chicken,False
+Laura Moore,Sugar; Eggs; Carrot; Cheese; Bread; Butter; Strawberry; Ice Cream; Orange; Flour,False
+James Williams,Ice Cream; Pasta; Banana; Toothpaste,True
+Laura Moore,Eggs; Soap; Butter; Blueberry; Cereal; Cheese,True
+Chris Taylor,Banana; Salt; Shampoo,True
+James Jones,Soda; Cookies; Butter; Toothpaste; Beef; Tea; Shrimp; Chocolate; Blueberry,False
+Robert Brown,Pork; Butter; Carrot; Yogurt; Soda; Shampoo; Fish; Deodorant,False
+Katie Miller,Fish; Flour; Milk,False
+James Williams,Beef; Soap; Sugar,True
+David Davis,Pork; Soap; Milk; Rice; Juice; Deodorant,True
+Katie Miller,Toothpaste; Strawberry; Shrimp; Olive Oil; Sugar; Carrot; Soda; Milk; Shampoo; Candy,False
+Jane Miller,Soda; Chicken; Pepper; Shrimp; Cookies; Apple,True
+David Brown,Soap; Juice; Milk; Banana; Olive Oil; Coffee; Flour; Salt; Oatmeal; Yogurt,False
+Katie Johnson,Blueberry; Pasta,True
+David Taylor,Eggs; Milk; Soap; Soda; Carrot; Pork; Deodorant; Tomato; Butter; Coffee,False
+John Jones,Shampoo; Eggs; Tea; Lotion; Flour; Strawberry; Carrot; Pasta,False
+James Williams,Strawberry; Apple; Flour,False
+David Williams,Chips; Milk; Tea; Eggs; Shampoo; Bread; Juice,False
+Robert Brown,Broccoli; Shampoo; Milk; Soda; Rice; Pepper; Fish; Olive Oil; Lotion,True
+James Davis,Candy; Eggs; Rice; Milk; Lettuce; Spinach; Juice; Carrot; Toothpaste,False
+Jane Johnson,Chocolate; Pork; Butter; Juice; Chicken,False
+David Johnson,Strawberry; Candy; Soda; Oatmeal; Pork; Shampoo; Shrimp,True
+Alex Davis,Butter; Apple; Chocolate; Shrimp; Beef; Milk; Coffee; Water,True
+Robert Brown,Shrimp; Broccoli; Beef; Sugar; Tomato; Orange; Fish; Soap; Apple; Pasta,True
+Sara Wilson,Cookies; Cereal; Pork; Milk; Pepper; Coffee; Cheese; Salt,True
+Chris Davis,Apple; Water; Olive Oil; Chicken; Blueberry; Shrimp; Cheese; Chocolate; Bread; Oatmeal,True
+Alex Smith,Shampoo; Pepper; Water,True
+Laura Brown,Cheese; Shampoo,False
+John Taylor,Milk; Chocolate; Juice; Toothpaste; Tea; Sugar; Oatmeal; Soda,False
+Chris Wilson,Coffee; Chocolate; Lettuce,False
+Alex Miller,Strawberry; Shampoo; Chicken; Olive Oil,True
+Jane Wilson,Flour; Pork; Yogurt; Chocolate; Water; Fish; Eggs,False
+John Johnson,Candy; Cheese; Chips; Oatmeal; Tea; Coffee; Pork; Salt; Flour; Toothpaste,True
+Laura Miller,Salt; Broccoli; Yogurt; Chips; Cookies,True
+James Johnson,Butter; Lettuce,False
+Alex Davis,Eggs; Juice; Bread,True
+David Williams,Lotion; Broccoli; Pepper; Salt; Spinach,False
+Sara Brown,Lotion; Pepper; Cookies; Chips; Cereal,True
+Laura Davis,Shampoo; Shrimp,True
+Katie Williams,Pepper; Tomato; Coffee,False
+Robert Brown,Beef; Apple; Olive Oil; Water; Tomato; Blueberry,True
+Chris Jones,Beef; Water,False
+Robert Wilson,Shrimp; Coffee; Apple; Beef; Strawberry; Tea; Banana; Flour,False
+Alex Brown,Strawberry; Ice Cream; Toothpaste; Butter; Beef; Orange; Shrimp; Shampoo,False
+Jane Davis,Pepper; Butter; Water,True
+Jane Moore,Banana; Yogurt; Broccoli; Lotion; Milk; Oatmeal; Pepper; Water,False
+Laura Smith,Juice; Orange; Fish; Oatmeal; Eggs,False
+John Wilson,Bread; Tomato; Deodorant; Strawberry; Juice; Lettuce; Butter,False
+James Williams,Shampoo,True
+Sara Brown,Beef; Cereal; Banana; Deodorant; Coffee; Lotion; Shampoo; Strawberry,True
+Jane Taylor,Chicken; Soap; Cereal; Pepper; Deodorant; Ice Cream; Pork,False
+James Moore,Water; Tomato; Tea; Pasta; Cookies; Cereal; Coffee; Shampoo; Apple,True
+Katie Wilson,Rice; Pepper; Cookies; Coffee; Deodorant; Lettuce; Olive Oil; Orange,False
+James Smith,Soda,True
+James Taylor,Pepper; Shrimp; Shampoo; Strawberry,True
+Sara Jones,Pasta; Butter; Chips; Candy; Cereal; Strawberry,False
+Laura Taylor,Sugar; Strawberry; Chicken; Flour; Cookies; Carrot; Bread; Blueberry,False
+Katie Smith,Toothpaste; Fish; Olive Oil; Coffee; Juice,True
+Katie Jones,Banana; Fish; Shampoo; Chicken; Cookies,False
+James Jones,Orange; Apple; Spinach; Butter; Salt; Rice,False
+John Taylor,Olive Oil; Candy; Pork; Bread; Tea,False
+John Taylor,Chicken; Milk; Eggs; Spinach; Carrot; Blueberry; Olive Oil; Chocolate; Broccoli; Shrimp,False
+Jane Johnson,Lotion; Salt; Strawberry; Pork; Chips,True
+Laura Smith,Apple; Salt; Eggs; Pasta; Strawberry; Orange; Shrimp; Beef; Broccoli; Soda,True
+Chris Johnson,Spinach; Cereal; Lettuce; Blueberry; Oatmeal; Milk; Orange; Olive Oil,False
+David Williams,Olive Oil; Shrimp; Chicken; Tomato; Spinach; Sugar; Beef; Lotion,False
+David Davis,Flour; Orange; Deodorant; Cereal; Pepper; Blueberry,True
+Katie Jones,Lotion; Broccoli; Coffee; Flour; Chips; Rice; Salt; Oatmeal,False
+Alex Wilson,Tomato; Deodorant,False
+Chris Davis,Chips; Juice; Orange; Pepper; Shrimp; Tea; Ice Cream,True
+John Smith,Beef; Ice Cream; Milk; Lotion; Yogurt; Pepper; Tomato; Salt; Coffee,True
+Katie Miller,Juice; Yogurt; Cookies; Strawberry; Water; Ice Cream,True
+Laura Williams,Cereal,False
+Jane Jones,Lettuce; Tea; Milk; Cheese; Shampoo; Cookies,True
+Robert Brown,Cheese; Coffee; Soda; Cereal; Chicken; Carrot; Apple; Blueberry; Pepper,False
+Alex Davis,Cheese; Olive Oil; Broccoli; Spinach; Soap,True
+John Johnson,Oatmeal; Cereal; Water; Sugar,False
+John Smith,Rice; Bread; Cheese; Apple; Juice; Pepper,True

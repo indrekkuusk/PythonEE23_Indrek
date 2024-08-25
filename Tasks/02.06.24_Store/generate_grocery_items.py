@@ -1,0 +1,1 @@
+python generate_grocery_items.py
