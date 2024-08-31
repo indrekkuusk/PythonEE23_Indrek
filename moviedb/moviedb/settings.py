@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'moviesearch',  # Add this line
-    'moviedetails',  # Add this line
+    'moviesearch',  #
+    'moviedetails',  #
+    'accounts',
+
 ]
 
 MIDDLEWARE = [

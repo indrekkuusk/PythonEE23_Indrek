@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('moviesearch.urls')),  # Main search
     path('moviedetails/', include('moviedetails.urls')),  # Detailed movie view
+    path('accounts/', include('accounts.urls')),
 ]

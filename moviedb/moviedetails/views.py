@@ -3,7 +3,8 @@ from django.shortcuts import render
 # Create your views here.
 import requests
 from django.shortcuts import render
-
+from django.shortcuts import render
+from .models import SavedMovie  # Ensure this is the model
 # Your TMDB API key
 TMDB_API_KEY = 'your_api_key_here'
 
@@ -42,6 +43,6 @@ def save_movie(request, movie_id):
     return redirect('movie_detail', movie_id=movie_id)
 
 def bookmarked_movies(request):
-    saved_movies = save_movie.objects.all()
+    saved_movies = SavedMovie.objects.all()
     return render(request, 'moviedetails/bookmarked.html', {'saved_movies': saved_movies})
 

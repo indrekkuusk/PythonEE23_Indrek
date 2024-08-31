@@ -51,13 +51,12 @@
         {% endfor %}
     </ul>
 
-    <!-- Add the bookmark button -->
-    <form action="{% url 'save_movie' movie.id %}" method="post">
-        {% csrf_token %}
-        <button type="submit">Bookmark this Movie</button>
+
     </form>
 
     <a href="{% url 'movie_search' %}">Back to Search</a>
 
+
 </body>
 </html>
+
