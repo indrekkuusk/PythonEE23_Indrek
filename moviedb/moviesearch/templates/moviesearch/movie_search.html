@@ -1,0 +1,121 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Movie Search</title>-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container mt-5">-->
+<!--    <h1>Search for a Movie</h1>-->
+<!--    <form method="post">-->
+<!--        {% csrf_token %}-->
+<!--        {{ form.as_p }}-->
+<!--        <button type="submit" class="btn btn-primary">Search</button>-->
+<!--    </form>-->
+
+<!--    {% if error_message %}-->
+<!--        <div class="alert alert-danger mt-3">{{ error_message }}</div>-->
+<!--    {% endif %}-->
+
+<!--    {% if movies %}-->
+<!--        <h2>Results:</h2>-->
+<!--        <ul class="list-group mt-3">-->
+<!--            {% for movie in movies %}-->
+<!--                <li class="list-group-item">-->
+<!--                    <h5>{{ movie.title }} ({{ movie.release_date|slice:":4" }})</h5>-->
+<!--                    <p>{{ movie.overview }}</p>-->
+<!--                    {% if movie.poster_path %}-->
+<!--                        <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt="{{ movie.title }}">-->
+<!--                    {% endif %}-->
+<!--                </li>-->
+<!--            {% endfor %}-->
+<!--        </ul>-->
+<!--    {% endif %}-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+<!-- moviesearch/templates/moviesearch/movie_search.html -->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Movie Search</title>-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container mt-5">-->
+<!--    <h1>Search for a Movie</h1>-->
+<!--    <form method="post">-->
+<!--        {% csrf_token %}-->
+<!--        {{ form.as_p }}-->
+<!--        <button type="submit" class="btn btn-primary">Search</button>-->
+<!--    </form>-->
+
+<!--    {% if error_message %}-->
+<!--        <div class="alert alert-danger mt-3">{{ error_message }}</div>-->
+<!--    {% endif %}-->
+
+<!--    {% if movies %}-->
+<!--        <h2>Results:</h2>-->
+<!--        <ul class="list-group mt-3">-->
+<!--            {% for movie in movies %}-->
+<!--                <li class="list-group-item">-->
+<!--                    <h5>-->
+<!--                        <a href="{% url 'movie_detail' movie.id %}">{{ movie.title }} ({{ movie.release_date|slice:":4" }})</a>-->
+<!--                    </h5>-->
+<!--                    <p>{{ movie.overview }}</p>-->
+<!--                    {% if movie.poster_path %}-->
+<!--                        <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt="{{ movie.title }}">-->
+<!--                    {% endif %}-->
+<!--                </li>-->
+<!--            {% endfor %}-->
+<!--        </ul>-->
+
+<!--    {% endif %}-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Search for a Movie</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    {% if error_message %}
+        <div class="alert alert-danger mt-3">{{ error_message }}</div>
+    {% endif %}
+
+    {% if movies %}
+        <h2>Results:</h2>
+        <ul class="list-group mt-3">
+            {% for movie in movies %}
+                <li class="list-group-item">
+                    <h5>
+                        <!-- Correct the URL name to match the detailed view's name 'movie_detail_view' -->
+                        <a href="{% url 'movie_detail_view' movie.id %}">{{ movie.title }} ({{ movie.release_date|slice:":4" }})</a>
+                    </h5>
+                    <p>{{ movie.overview }}</p>
+                    {% if movie.poster_path %}
+                        <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt="{{ movie.title }}">
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+</body>
+</html>
+

@@ -1,48 +1,22 @@
-from django.shortcuts import render
-
-# Create your views here.
 import requests
 from django.shortcuts import render
-from django.shortcuts import render
-from .models import SavedMovie  # Ensure this is the model
-# Your TMDB API key
-TMDB_API_KEY = 'your_api_key_here'
+from django.conf import settings
 
-
-def movie_detail(request, movie_id):
-    # API URL to get movie details by ID
-    movie_url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={TMDB_API_KEY}&append_to_response=credits'
-
-    response = requests.get(movie_url)
+def movie_detail_view(request, movie_id):
+    """
+    Retrieve detailed movie information from TMDB API using the movie ID.
+    """
+    api_key = settings.TMDB_API_KEY
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&append_to_response=credits"
     movie = None
+    error_message = None
 
-    if response.status_code == 200:
-        movie = response.json()  # Get movie details including credits
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        movie = response.json()
 
-    return render(request, 'moviedetails/detail.html', {'movie': movie})
+    except requests.exceptions.RequestException as e:
+        error_message = f"An error occurred: {e}"
 
-def save_movie(request, movie_id):
-    # Check if the movie is already saved
-    if SavedMovie.objects.filter(movie_id=movie_id).exists():
-        return redirect('movie_detail', movie_id=movie_id)
-
-    # Fetch movie details from TMDB API
-    movie_url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={TMDB_API_KEY}'
-    response = requests.get(movie_url)
-    if response.status_code == 200:
-        movie_data = response.json()
-        # Save the movie to the database
-        saved_movie = SavedMovie(
-            movie_id=movie_data['id'],
-            title=movie_data['title'],
-            overview=movie_data['overview'],
-            poster_path=movie_data['poster_path']
-        )
-        saved_movie.save()
-
-    return redirect('movie_detail', movie_id=movie_id)
-
-def bookmarked_movies(request):
-    saved_movies = SavedMovie.objects.all()
-    return render(request, 'moviedetails/bookmarked.html', {'saved_movies': saved_movies})
-
+    return render(request, 'moviedetails/movie_detail.html', {'movie': movie, 'error_message': error_message})

@@ -1,42 +1,81 @@
-from django.shortcuts import render
-
-# Create your views here.
-
+# import requests
+# from django.shortcuts import render
+# from django.conf import settings
+# from .forms import MovieSearchForm
+#
+#
+# def movie_search(request):
+#     movies = []
+#     error_message = None
+#
+#     if request.method == 'POST':
+#         form = MovieSearchForm(request.POST)
+#         if form.is_valid():
+#             title = form.cleaned_data['title']
+#             api_key = settings.TMDB_API_KEY  # Store your API key in settings.py
+#             url = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={title}"
+#
+#             try:
+#                 response = requests.get(url)
+#                 response.raise_for_status()  # Raise an HTTPError for bad responses
+#
+#                 data = response.json()
+#                 movies = data.get('results', [])
+#
+#             except requests.exceptions.RequestException as e:
+#                 error_message = f"An error occurred: {e}"
+#
+#     else:
+#         form = MovieSearchForm()
+#
+#     return render(request, 'moviesearch/movie_search.html',
+#                   {'form': form, 'movies': movies, 'error_message': error_message})
+# moviesearch/views.py
 import requests
 from django.shortcuts import render
+from django.conf import settings
 from .forms import MovieSearchForm
-
-# Your TMDB API key
-TMDB_API_KEY = '39d781d16ae58372fa607e5d412b1bc3'
 
 
 def movie_search(request):
-    form = MovieSearchForm()
-    movies = None
+    movies = []
+    error_message = None
 
     if request.method == 'POST':
         form = MovieSearchForm(request.POST)
         if form.is_valid():
-            query = form.cleaned_data['query']
-            url = f'https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={query}'
+            title = form.cleaned_data['title']
+            api_key = settings.TMDB_API_KEY
+            url = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={title}"
 
-            response = requests.get(url)
-            if response.status_code == 200:
+            try:
+                response = requests.get(url)
+                response.raise_for_status()
                 data = response.json()
-                movies = data['results']  # Get list of movies
+                movies = data.get('results', [])
 
-    return render(request, 'search.html', {'form': form, 'movies': movies})
+            except requests.exceptions.RequestException as e:
+                error_message = f"An error occurred: {e}"
+
+    else:
+        form = MovieSearchForm()
+
+    return render(request, 'moviesearch/movie_search.html',
+                  {'form': form, 'movies': movies, 'error_message': error_message})
 
 
 def movie_detail(request, movie_id):
-    # API URL to get movie details by ID
-    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={TMDB_API_KEY}'
-
-    response = requests.get(url)
+    api_key = settings.TMDB_API_KEY
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}"
     movie = None
+    error_message = None
 
-    if response.status_code == 200:
-        movie = response.json()  # Get movie details from response
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        movie = response.json()
 
-    return render(request, 'detail.html', {'movie': movie})
+    except requests.exceptions.RequestException as e:
+        error_message = f"An error occurred: {e}"
 
+    return render(request, 'moviesearch/movie_detail.html', {'movie': movie, 'error_message': error_message})

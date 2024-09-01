@@ -1,11 +1,9 @@
+# moviedetails/urls.py
 from django.urls import path
-from . import views
+from .views import movie_detail_view
 
 urlpatterns = [
-    path('<int:movie_id>/', views.movie_detail, name='movie_detail'),
-    path('<int:movie_id>/save/', views.save_movie, name='save_movie'),
-    path('bookmarked/', views.bookmarked_movies, name='bookmarked_movies'),
+    path('movie/<int:movie_id>/', movie_detail_view, name='movie_detail_view'),
+
 ]
 
-from django.urls import path
-from . import views

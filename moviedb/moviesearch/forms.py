@@ -1,4 +1,4 @@
 from django import forms
 
 class MovieSearchForm(forms.Form):
-    query = forms.CharField(label='Search for a Movie', max_length=100)
+    title = forms.CharField(label='Movie Title', max_length=100, required=True)
